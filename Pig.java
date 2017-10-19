@@ -1,4 +1,23 @@
-class Pig //implements Animal 
+class Pig implements Animal
 {     
-     //your code here
+     private String myType;
+     private String mySound;
+     public Pig(String type, String sound)
+     {
+     	myType = type;
+     	mySound = sound;
+     }
+     public Pig()
+     {
+     	myType = "Actual Real Nazi";
+     	mySound = "Ah yes, I am exactly like that fellow republican";
+     }
+     public String getSound()
+     {
+     	return mySound;
+     }
+     public String getType()
+     {
+     	return myType;
+     }
 }
